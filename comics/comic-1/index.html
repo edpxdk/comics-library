@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
-    <header>
-      <h1>Comic 1 - Chapter 1</h1>
-    </header>
+      <header>
+        <h1>Comic 1 - Chapter 1</h1>
+      </header>
 
-    <main id="reader"></main>
+      <main id="reader"></main>
 
-    <script>
-      const pages = ["ch1/1.jpg", "ch1/2.jpg", "ch1/3.jpg"];
+      <script>
+        const pages = ["ch1/1.jpg", "ch1/2.jpg", "ch1/3.jpg"];
+        const reader = document.getElementById("reader");
 
-      const reader = document.getElementById("reader");
-
-      pages.forEach((p) => {
-        const img = document.createElement("img");
-        img.src = p;
-        img.style.width = "100%";
-        img.style.display = "block";
-        reader.appendChild(img);
-      });
-    </script>
+        pages.forEach((p) => {
+          const img = document.createElement("img");
+          img.src = p;
+          img.style.width = "100%";
+          img.style.display = "block";
+          reader.appendChild(img);
+        });
+      </script>
+    </section>
   </body>
 </html>
